@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME - BRLTech</title>
-</head>
-<body>
-    <h1>Hello World! in ejs</h1>
+<%- include('partials/header'); %>
+<body class="brl-center-box brl-bg-gradient">
+    
+        <div class="card text-center shadow" style="max-width: 500px;">
+            <img src="img/capa.jpg" class="card-img-top" alt="capa brltech">
+            <div class="card-body">
+                <h1 class="fs-2">Olá, você está na <span class="brl-color-1">BRLTech</span></h1>
+                <p>Nosso site ainda está em desenvolvimento <i class="bi bi-code-slash"></i>. Mas fique a vontade para entrar em contato! <i class="bi bi-chat-left-dots"></i></p>
+                <hr>
+                <p><i class="bi bi-whatsapp"></i> (62) 9 9669-1186</p>
+                <p><i class="bi bi-envelope"></i> contato@brltech.com.br</p>
+            </div>
+        </div>
+    
 </body>
-</html>
+<%- include('partials/footer'); %>
