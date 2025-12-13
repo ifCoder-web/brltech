@@ -9,6 +9,16 @@ const port = process.env.PORT || 8081
     // Static
     app.use(express.static('public'));
 
+    // Redirect
+    app.use((req, res, next) => {
+      if (req.hostname === 'brltech.com.br') {
+        return res.redirect(301, 'https://www.brltech.com.br' + req.originalUrl);
+      }else if (req.hostname === 'http://brltech.com.br') {
+        return res.redirect(301, 'https://www.brltech.com.br' + req.originalUrl);
+      }
+      next();
+    });
+
 app.get('/', (req, res) => {
   res.render("index")
 })
