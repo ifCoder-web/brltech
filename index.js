@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   res.render("index")
 })
 
+app.get("/ml", (req, res) => {
+  res.render("ml")
+})
+
 app.listen(port, () => {
   console.log(`No ar! Porta: ${port}`)
 })

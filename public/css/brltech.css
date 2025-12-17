@@ -18,8 +18,24 @@ i {
     align-items: center;
 }
 
+    .brl-center-box_ml {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .brl-grid-ml {
+        display: grid; /* Transforma em contêiner grid */
+        grid-template-columns: 1fr 1fr; /* Cria 2 colunas de largura igual */
+        gap: 10px; /* Espaçamento entre as células */
+    }
+
 /* BG */
 .brl-bg-gradient {
     background: #4424D4;
     background: linear-gradient(120deg,rgba(68, 36, 212, 1) 0%, rgba(161, 119, 233, 1) 100%);
 }
+
+    .brl-bg-ml {
+        background-color: #FFE600;
+    }
