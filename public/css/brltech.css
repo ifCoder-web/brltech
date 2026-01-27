@@ -4,9 +4,19 @@
 .brl-color-1 {
     color: #4424D4 !important;
 }
-
+/* 
 i {
     color: #4424D4;
+} */
+
+/* Buttons */
+.btn-primary {
+    border: #4424D4 !important;
+    background: #4424D4 !important;
+}
+.btn-primary:hover {
+    border: #371dac !important;
+    background: #371dac !important;
 }
 
 /* Center box */
