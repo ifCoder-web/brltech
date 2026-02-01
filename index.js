@@ -27,6 +27,10 @@ app.get("/ml", (req, res) => {
   res.render("ml")
 })
 
+app.get("/confirm", (req, res) => {
+  res.render("confirm")
+})
+
 app.listen(port, () => {
   console.log(`No ar! Porta: ${port}`)
 })
